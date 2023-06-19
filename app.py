@@ -1,5 +1,5 @@
 from flask import Flask, render_template, session, url_for, redirect
-from wtforms import TextField, SubmitField
+from wtforms import StringField, SubmitField
 from flask_wtf import FlaskForm
 
 from tensorflow.keras.models import load_model
@@ -32,10 +32,10 @@ app.config['SECRET_KEY'] = 'mysecretkey'
 
 class FlowerForm(FlaskForm):
 
-    sep_len = TextField('Sepal Length')
-    sep_wid = TextField('Sepal Width')
-    pet_len = TextField('Petal Length')
-    pet_wid = TextField('Petal Width')
+    sep_len = StringField('Sepal Length')
+    sep_wid = StringField('Sepal Width')
+    pet_len = StringField('Petal Length')
+    pet_wid = StringField('Petal Width')
 
     submit = SubmitField('Analyze')
 

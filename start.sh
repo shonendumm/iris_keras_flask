@@ -1,3 +1,3 @@
 #!/bin/bash
 
-python website.py
+python app.py
