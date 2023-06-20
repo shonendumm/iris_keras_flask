@@ -6,7 +6,7 @@
 
 # How to run (using Docker container)
 1. Build a docker image by running `docker build --tag <image_name> .` in the same folder as the Dockerfile using terminal.
-2. After docker image is built, run `docker run --publish 8000:5000 <image_name>`
+2. After docker image is built, run the docker container using `docker run --publish 8000:5000 <image_name>`
 3. In your browser, open localhost:8000 and you will be able to see the app.
 
 # Alternative method to run
