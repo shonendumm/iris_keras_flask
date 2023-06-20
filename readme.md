@@ -4,9 +4,15 @@
 - Deploying the model as an API using Flask
 - Deploying the model as a website using Flask
 
-# How to run 
+# How to run (using Docker container)
+1. Build a docker image by running `docker build --tag <image_name> .` in the same folder as the Dockerfile using terminal.
+2. After docker image is built, run `docker run --publish 8000:5000 <image_name>`
+3. In your browser, open localhost:8000 and you will be able to see the app.
+
+# Alternative method to run
 1. Install the necessary python libraries in requirements.txt
-2. Cd into the folder and run using command line: `python website.py`
+2. Cd into the folder and run the Flask app using terminal: `python app.py`
+
 
 # Acknowledgements / References
 
